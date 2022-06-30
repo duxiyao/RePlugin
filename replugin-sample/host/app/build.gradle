@@ -37,7 +37,7 @@ android {
 apply plugin: 'replugin-host-gradle'
 repluginHostConfig {
     useAppCompat = true
-    useAndroidX = true
+//    useAndroidX = true
     // 可以在这里自定义常驻进程的名字
     // persistentName = ":XXXXService"
 }
@@ -46,5 +46,5 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
-    implementation "com.qihoo360.replugin:replugin-host-lib:${RP_VERSION}"
+    implementation "com.qihoo360.replugin:replugin-host-lib:2.3.4"
 }
